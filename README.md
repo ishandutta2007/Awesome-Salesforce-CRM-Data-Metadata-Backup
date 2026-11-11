@@ -1,133 +1,303 @@
-# Awesome-Scalable-Cloud-Testing-Infrastructure
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Salesforce CRM Data and Metadata Backup Solutions Banner" width="100%">
+</p>
 
-# Awesome Scalable Cloud Testing Infrastructure
+# 🛡️ Awesome Salesforce CRM Data & Metadata Backup
 
-> A curated list of top Scalable Cloud Testing Infrastructure platforms — both SaaS/Hosted commercial solutions and open-source alternatives for running tests at scale across browsers, devices, and cloud environments.
-> 🌟 Star this repo if you find it useful! 🌟
+> 🚀 **A curated index of top-tier Salesforce CRM Data and Metadata Backup platforms** — spanning enterprise SaaS/Hosted commercial data protection solutions and community-driven open-source CLI utilities for safeguarding Salesforce standard/custom objects, files, Chatter feeds, metadata configurations, and schema definitions against data corruption, human error, ransomware, and compliance disasters.
 
----
-
-## 📋 Table of Contents
-
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [BrowserStack Automate](#browserstack-automate)
-  - [Sauce Labs](#sauce-labs)
-  - [LambdaTest (TestMu AI)](#lambdatest-testmu-ai)
-  - [AWS Device Farm](#aws-device-farm)
-  - [Google Kubernetes Engine (GKE)](#google-kubernetes-engine-gke)
-  - [Azure Kubernetes Service (AKS)](#azure-kubernetes-service-aks)
-  - [Amazon EKS](#amazon-eks)
-  - [Red Hat OpenShift](#red-hat-openshift)
-- [Open-Source Software](#-open-source-software)
-  - [Selenium Grid](#selenium-grid)
-  - [Testkube](#testkube)
-  - [Kubernetes (kind)](#kubernetes-kind)
-  - [HashiCorp Nomad](#hashicorp-nomad)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
+[![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/ishandutta2007/Awesome-Salesforce-CRM-Data-Metadata-Backup/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Salesforce-CRM-Data-Metadata-Backup/graphs/commit-activity)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 📑 Table of Contents
 
-Commercial, cloud-hosted Scalable Cloud Testing Infrastructure platforms. These are not open-source but are included as reference points for feature comparison.
-
-### BrowserStack Automate
-**Type:** Fully managed cloud Selenium grid with 3,500+ browser-OS combinations  
-BrowserStack Automate provides instant access to a cloud Selenium grid of 3,500+ real desktop and mobile browser-OS combinations, eliminating the need to maintain in-house device labs [citation:3]. Tests run in parallel on hundreds or thousands of browsers, significantly reducing build times. Key AI capabilities include **Self-Healing Agent** for auto-remediating broken locators at runtime, **Test Selection Agent** for running only impacted tests, and AI-powered test reporting that identifies flaky and always-failing tests [citation:3]. Integration requires no code changes, with 150+ CI/CD and tooling integrations. **Scale proof:** Nykaa runs 1,500 test cases nightly and 2,000 during releases, completing 650 tests in 4 hours through parallelization [citation:11].  
-**Best for:** Teams wanting a fully managed, enterprise-grade cloud grid with AI-assisted test stability and debugging, without infrastructure overhead.
-
-### Sauce Labs
-**Type:** Cloud testing platform with real device cloud and agentic analytics  
-Sauce Labs provides a closed-loop agentic platform where production behavior feeds back into what gets tested next, with real device cloud (10,000+ devices) plus virtual devices, test analytics tracking failure history across runs, and enterprise controls included at lower tiers [citation:6]. All three major platforms (BrowserStack, LambdaTest, Sauce Labs) share tunnels for local testing, Selenium/Playwright/Cypress support, Appium for mobile, and video recordings with screenshots [citation:6]. **Pricing:** At five parallel tests on real device automation tiers, published rates range from $1,125 to $1,249 per month across the three platforms, with annual discounts standard [citation:6].  
-**Best for:** Teams wanting closed-loop test intelligence with real device coverage and enterprise governance without premium-tier gating.
-
-### LambdaTest (TestMu AI)
-**Type:** Cloud grid with HyperExecute orchestration and broad browser matrix  
-LambdaTest offers a wide browser and OS matrix including older browser versions that enterprise customers still require, with **HyperExecute** distributing test execution more aggressively than a standard parallel grid to reduce run times for large suites [citation:6]. At comparable tiers, LambdaTest pricing undercuts BrowserStack on parallel tests. It publishes 10,000+ real devices (vs. BrowserStack's 30,000+ real devices with no emulators/simulators) [citation:6].  
-**Best for:** Teams needing aggressive parallel distribution and cost-effective access to older browser versions for enterprise compatibility testing.
-
-### AWS Device Farm
-**Type:** Pay-per-minute real device testing within AWS ecosystem  
-AWS Device Farm offers a pay-per-minute model ($0.17/minute) with native integration into AWS CodePipeline and CodeBuild, supporting Appium, Espresso, XCUITest, and custom test environments [citation:9]. **Trade-offs:** Limited browser/OS combinations for web testing compared to Sauce Labs, weaker analytics, and no compliance-level reporting; pay-per-minute becomes expensive at high test volumes [citation:9]. A one-time free trial of 1,000 device minutes is available.  
-**Best for:** Teams already standardized on AWS infrastructure with low-to-moderate testing volumes wanting path-of-least-resistance integration.
-
-### Google Kubernetes Engine (GKE)
-**Type:** Managed Kubernetes for test infrastructure orchestration  
-GKE provides managed Kubernetes clusters that can host test execution infrastructure, including Selenium Grid deployments, Testkube agents, and custom test runners. It offers autoscaling, node auto-provisioning, and integration with Google Cloud services. Suited for teams building custom scalable test platforms on Kubernetes.
-
-### Azure Kubernetes Service (AKS)
-**Type:** Managed Kubernetes within Azure ecosystem  
-AKS provides managed Kubernetes clusters for deploying scalable test infrastructure, with integration into Azure DevOps, Azure Monitor, and the broader Microsoft ecosystem. Supports autoscaling and node pools for test workload isolation.
-
-### Amazon EKS
-**Type:** Managed Kubernetes on AWS  
-EKS provides managed Kubernetes clusters for test infrastructure, with integration into AWS IAM, CloudWatch, and CodePipeline. Suited for AWS-centric teams wanting Kubernetes-based test orchestration without managing control planes.
-
-### Red Hat OpenShift
-**Type:** Enterprise Kubernetes with developer tooling  
-OpenShift provides enterprise-grade Kubernetes with built-in CI/CD (OpenShift Pipelines), developer tooling, and security controls. Suited for organizations wanting a supported Kubernetes platform for test infrastructure with strong governance.
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Enterprise Hosted Platforms](#️-saas--enterprise-hosted-platforms)
+  - [🏢 Enterprise Comparison Matrix](#-enterprise-comparison-matrix)
+  - [🔍 In-Depth SaaS Solution Profiles](#-in-depth-saas-solution-profiles)
+- [💻 Open-Source Software & CLI Tooling](#-open-source-software--cli-tooling)
+  - [⭐ Open-Source Repositories Ranked by Community Stars](#-open-source-repositories-ranked-by-community-stars)
+  - [🛠️ In-Depth Open-Source Tool Profiles](#️-in-depth-open-source-tool-profiles)
+- [📊 Feature Comparison at a Glance](#-feature-comparison-at-a-glance)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
-## 🟩 Open-Source Software
+## 🌐 Sector Overview & Market Dynamics
 
-Self-hosted, community-driven Scalable Cloud Testing Infrastructure tools. The open-source ecosystem spans **mature grid servers**, **Kubernetes-native test orchestration**, and **lightweight local cluster frameworks**.
+The global **SaaS backup and data protection market** is valued at approximately **$4.5B–$6.0B** (with the dedicated Salesforce data protection segment alone surpassing **$1.8B** and expanding at a compound annual growth rate (**CAGR of ~16.5%**) toward **$5B+ by 2032**), driven by strict shared-responsibility models, SEC cyber disclosure mandates, and rising enterprise ransomware attacks. 
 
-### Selenium Grid
-**Stack:** Java / Docker / Kubernetes | **License:** Apache-2.0  
-Selenium Grid is the foundational open-source infrastructure for scalable test execution, enabling parallel test runs across multiple browsers and machines. **Grid 4.41.0** (February 2026) ships 167+ Docker image variants across Chrome, Chrome for Testing, Edge, and Firefox, spanning versions 95 through 148 [citation:4]. **Kubernetes Dynamic Grid** provisions exactly one browser Pod per session request and deletes it immediately on close, with a TOML config mapping browser images to capability stereotypes [citation:13]. The Fluxbox desktop inside node images now includes a right-click menu with browser launchers for interactive debugging via VNC/noVNC [citation:4]. **Structured logging** can be configured to emit pure JSON for log aggregation pipelines (Loki, Elasticsearch) by setting `SE_PLAIN_LOGS=false` [citation:4].  
-**Best for:** Teams wanting full control over their test grid with Docker/Kubernetes deployment, accepting the operational overhead of managing browser versions and scaling.
-
-### Testkube
-**Stack:** Go / Kubernetes | **License:** MIT (Open Source Agent)  
-Testkube is a Kubernetes-native testing platform that runs any tests (API, E2E, Performance, Security, Infrastructure) in your Kubernetes cluster, triggered manually, on schedules, from CI/CD/GitOps, on Kubernetes Events, via REST API, or through MCP [citation:14]. All test results, artifacts, logs, and resource metrics are aggregated for centralized troubleshooting. The **Open Source Agent** is MIT-licensed and runs standalone in a single cluster with no control plane required; the **Commercial Control Plane** connects every agent across clusters and teams into a single dashboard with SSO/SCIM, RBAC, audit logs, and SLA-backed support [citation:14]. Trusted by CoreWeave, NVIDIA, Siemens, T-Mobile, and Harvard [citation:14].  
-**Best for:** Kubernetes-centric teams wanting a single platform to define, run, and analyze any test type across clusters, with the option to start open-source and scale to a commercial control plane.
-
-### Kubernetes (kind)
-**Stack:** Go / Docker | **License:** Apache-2.0  
-kind (Kubernetes IN Docker) is a tool for running local Kubernetes clusters using Docker container "nodes," primarily designed for testing Kubernetes itself but widely adopted for local development and CI testing [citation:7]. **sk8s** is a Go testing framework that spins up an ephemeral kind cluster via Testcontainers and provides APIs for deploying and asserting on workloads (pods, deployments, Helm charts, CRDs) [citation:2].  
-**Best for:** Developers wanting lightweight, ephemeral Kubernetes clusters for local or CI testing without cloud infrastructure costs.
-
-### HashiCorp Nomad
-**Stack:** Go | **License:** Business Source License (BSL) 1.1  
-Nomad is a simple, flexible workload orchestrator that can schedule containers, VMs, and standalone binaries across infrastructure. It is lighter than Kubernetes and can be used to orchestrate test execution workloads. **Note:** Nomad moved to the Business Source License in 2023, which is not OSI-approved open source, though the free tier remains available for most internal use cases.  
-**Best for:** Teams wanting simpler orchestration than Kubernetes for test workloads, accepting the BSL licensing terms.
+The sector is **moderately concentrated at the high-end enterprise tier**—anchored by dominant multi-billion-dollar infrastructure consolidators (e.g., Veeam, Commvault, and Salesforce's own $1.9B acquisition of Own/OwnBackup)—while remaining **vibrantly fragmented across the mid-market and developer DevOps ecosystem**, where specialized ISVs (Odaseva, Druva, Flosum) compete intensely on Bring-Your-Own-Key (BYOK) cryptography, multi-cloud compliance, and metadata CI/CD pipeline automation.
 
 ---
 
-## 📊 Comparison at a Glance
+## ☁️ SaaS & Enterprise Hosted Platforms
 
-| Software | License | Stack | Scale Model | Self-Hosted | Best For |
-|----------|---------|-------|-------------|-------------|----------|
-| **BrowserStack** | Proprietary | Cloud | 3,500+ browser-OS | ❌ | Managed grid + AI stability |
-| **Sauce Labs** | Proprietary | Cloud | 10,000+ devices | ❌ | Closed-loop test intelligence |
-| **LambdaTest** | Proprietary | Cloud | 10,000+ devices | ❌ | Aggressive parallel + older browsers |
-| **AWS Device Farm** | Proprietary | Cloud | Pay-per-minute | ❌ | AWS-native low-volume testing |
-| **Selenium Grid** | Apache-2.0 | Java/Docker/K8s | 167+ image variants | ✅ | Full control over grid |
-| **Testkube** | MIT (Agent) | Go/K8s | Any test type | ✅ | K8s-native test orchestration |
-| **kind** | Apache-2.0 | Go/Docker | Ephemeral clusters | ✅ | Local/CI K8s testing |
-| **Nomad** | BSL 1.1 | Go | Workload orchestration | ✅ | Simpler than K8s |
+Commercial, cloud-hosted Salesforce CRM Data and Metadata Backup platforms engineered for large-scale enterprise data resilience, automated RPO/RTO adherence, and sandbox management.
+
+### 🏢 Enterprise Comparison Matrix
+
+> Sorted descending by **Company Scale (Valuation / Market Capitalization / Parent Revenue)**:
+
+| Platform | Company Scale (Valuation / Revenue) 🏢 | Pricing (Starting Paid Tier) 💳 | Free Tier / Trial Limit 🎁 | Deployment Architecture ⚙️ | Key Specialization 🎯 |
+|---|---|---|---|---|---|
+| **[Veeam Backup & Data Cloud for Salesforce](#veeam-backup-for-salesforce)** | **$15.0B Valuation** (~$2.0B ARR) | **$2.60 / user / mo** (Self-Hosted); **$4.17 / user / mo** (Managed Cloud) | **Free Forever** for up to **50 Salesforce user licenses** (Community Edition); 30-day enterprise trial | Self-Hosted (AWS, Azure, On-prem) or Managed SaaS | Full backup engine, PostgreSQL BYOS, 50-user free Community Edition |
+| **[Commvault Cloud for Salesforce](#commvault-cloud-for-salesforce)** | **~$7.0B Market Cap** ($1.2B+ ARR) | **$3.60 / user / mo** (Annual billing) | **30-Day Free Trial** with full access to SaaS data protection & recovery workloads | Multi-Tenant Cloud / Commvault Metallic Cloud | Centralized multi-cloud enterprise protection, compliance locks & ransomware detection |
+| **[CloudAlly Salesforce Backup (OpenText)](#cloudally-salesforce-backup)** | **~$6.0B Market Cap** (Parent OpenText, $5.1B Rev) | **$2.50 / user / mo** ($30 / user / year starting base tier) | **14-Day Free Trial** with full automated daily backup & unlimited AWS S3 retention | Managed Cloud (AWS S3) | Automated daily snapshots, unlimited retention, multi-SaaS unified console |
+| **[AvePoint Cloud Backup for Salesforce](#avepoint-cloud-backup-for-salesforce)** | **~$3.5B Market Cap** ($465M+ ARR) | **£3.45 (~$4.35) / user / mo** (G-Cloud listed, min. seat bands) | **30-Day Free Trial / Proof-of-Concept** with sandbox seeding and restore drills | Managed Cloud / Multi-Cloud | Unlimited 4x/day replication, unlimited sandbox seeding, unified M365/Salesforce governance |
+| **[Druva Salesforce Backup](#druva-salesforce-backup)** | **$2.0B Valuation** ($200M+ ARR) | **$3.50 / user / mo** (AppExchange Enterprise starting base) | **30-Day Free Trial** with full feature access across live org data & sandbox seeding | 100% Serverless Cloud (AWS native) | Air-gapped immutable AWS storage, automated GDPR erasure & data portability |
+| **[Own (Formerly OwnBackup)](#ownbackup-own-for-salesforce)** | **$1.9B Acquisition Valuation** by Salesforce ($200M+ ARR) | **$1.95 / user / mo** (Base AppExchange entry tier) | **14-Day Free Trial** with full backup, visual org differencing & compare tools | Managed Cloud (Salesforce Native / AWS) | Salesforce-native market benchmark, visual line-by-line metadata compare |
+| **[Spanning Backup (Kaseya)](#spanning-backup-for-salesforce)** | **$2.0B+ Parent Valuation** (Kaseya IT Complete) | **$4.00 / user / mo** ($48 / user / year standard tier) | **14-Day Free Trial** with full snapshot access via Salesforce AppExchange | Managed Cloud | Point-in-time restore, automated daily capture, optimized for MSPs |
+| **[Odaseva Enterprise Data Protection](#odaseva-enterprise-data-protection)** | **$350M–$500M Est. Valuation** ($54M Series C) | **$5,000 / year** (Professional base tier, quote-based for LDV) | **No Free-Forever Plan**; tailored **Proof-of-Concept (POC)** & stress-test audit sandbox available | Multi-Cloud (AWS, Azure, Alibaba Cloud) | Patent-pending 5-level encryption, BYOK, ultra-large data volumes (LDV), China MLPS Level 3 |
+| **[Flosum Data Backup & Archive](#flosum-data-backup)** | **$100M+ Est. Valuation** (~$10M+ ARR, Bootstrapped) | **$2.75 / user / mo** (Standalone backup add-on, custom quote) | **14-Day Free Trial** for Flosum Backup & Archive cloud tenant connection | 100% Salesforce Native (Azure/AWS BYOS) | Deep Git/DevOps release pipeline integration, data masking, zero data egress |
+
+---
+
+### 🔍 In-Depth SaaS Solution Profiles
+
+#### 🛡️ Veeam Backup for Salesforce
+- **Company Scale:** ~$15.0B Valuation / $2.0B+ ARR.
+- **Starting Price:** $2.60/user/month (Self-Hosted); $4.17/user/month (Managed Cloud).
+- **Free Tier Limits:** **Free forever for up to 50 active Salesforce users** (Community Edition); 30-day enterprise trial.
+- **Architecture & Overview:** Provides autonomous data, metadata, and binary file protection. Admins can schedule granular backup intervals (down to 5 minutes) using Bulk API and REST API, with target databases running on local PostgreSQL, AWS RDS, or Azure Database.
+- **Best For:** Small organizations wanting a permanent $0 backup solution (≤50 seats) or enterprises requiring on-premises/BYOC data sovereignty without vendor lock-in.
+
+#### 🔒 Commvault Cloud for Salesforce
+- **Company Scale:** ~$7.0B Market Capitalization (NASDAQ: CVLT).
+- **Starting Price:** $3.60/user/month (annual billing).
+- **Free Tier Limits:** 30-day enterprise free trial with full feature access.
+- **Architecture & Overview:** Built on Commvault's Metallic AI security engine. Offers automated policy-driven protection across standard/custom objects, metadata configurations, chatter posts, and Knowledge articles, backed by immutable air-gapped cloud storage.
+- **Best For:** Large enterprises already standardizing multi-cloud workloads on Commvault seeking a single pane of glass for compliance.
+
+#### ☁️ CloudAlly Salesforce Backup (OpenText)
+- **Company Scale:** ~$6.0B Market Cap (Parent OpenText, NASDAQ: OTEX).
+- **Starting Price:** $2.50/user/month ($30/user/year entry tier).
+- **Free Tier Limits:** 14-day free trial with unrestricted automated daily snapshots.
+- **Architecture & Overview:** Enterprise-grade SaaS data protection that automates daily backups of Salesforce records, object schemas, metadata, Chatter, and attachments into secure AWS S3 storage with unlimited retention options.
+- **Best For:** Organizations seeking reliable, cost-effective backup across Salesforce, M365, and Google Workspace under one contract.
+
+#### 🌐 AvePoint Cloud Backup for Salesforce
+- **Company Scale:** ~$3.5B Market Capitalization (NASDAQ: AVPT).
+- **Starting Price:** £3.45 (~$4.35)/user/month (UK G-Cloud framework baseline).
+- **Free Tier Limits:** 30-day free proof-of-concept trial.
+- **Architecture & Overview:** Delivers automated backups running up to 4 times daily with multi-region Azure storage. Features comprehensive sandbox seeding, granular record-level rollback, and multi-tenant management.
+- **Best For:** Mid-to-large organizations requiring unlimited 4x/day replication and enterprise sandbox seeding without data volume surcharges.
+
+#### ⚡ Druva Salesforce Backup
+- **Company Scale:** $2.0B Valuation / $200M+ ARR.
+- **Starting Price:** $3.50/user/month (AppExchange listed base package).
+- **Free Tier Limits:** 30-day free trial with live org testing and sandbox seeding.
+- **Architecture & Overview:** 100% serverless, cloud-native architecture built on AWS. Backs up standard, custom, and managed package objects alongside metadata configurations, featuring automated GDPR "Right to Be Forgotten" erasure workflows.
+- **Best For:** Cloud-first enterprises seeking zero infrastructure footprint, automated compliance features, and air-gapped ransomware protection.
+
+#### 🏆 Own (Formerly OwnBackup)
+- **Company Scale:** $1.9B Acquisition Valuation (Acquired by Salesforce in Sept 2024).
+- **Starting Price:** $1.95/user/month (Entry-tier AppExchange baseline).
+- **Free Tier Limits:** 14-day full-featured free trial.
+- **Architecture & Overview:** The historical standard in Salesforce ecosystem protection. Offers high-speed incremental daily snapshots, line-by-line visual metadata differencing, automated relationship preservation during restores, and sandbox seeding.
+- **Best For:** Teams wanting native Salesforce ecosystem synergy and visual diffing tools for sandbox management and disaster recovery.
+
+#### 💼 Spanning Backup for Salesforce (Kaseya)
+- **Company Scale:** $2.0B+ Parent Company Valuation (Kaseya).
+- **Starting Price:** $4.00/user/month ($48/user/year base).
+- **Free Tier Limits:** 14-day free trial via Salesforce AppExchange.
+- **Architecture & Overview:** Streamlined, admin-friendly daily automated backup engine with field-level compare, point-in-time recovery, and export capabilities.
+- **Best For:** Managed Service Providers (MSPs) and mid-market Salesforce orgs wanting straightforward backup and recovery.
+
+#### 🔐 Odaseva Enterprise Data Protection
+- **Company Scale:** $350M–$500M Estimated Valuation ($54M Series C led by Silver Lake).
+- **Starting Price:** $5,000/year (Professional tier base); custom quote for large enterprise volumes.
+- **Free Tier Limits:** No free-forever plan; provides customized proof-of-concept (POC) sandbox stress tests.
+- **Architecture & Overview:** Engineered for global Fortune 500 enterprises with tens of billions of records. Implements patent-pending 5-level Bring Your Own Key (BYOK) cryptography, Salesforce Shield native integration, and China data residency compliance via Alibaba Cloud.
+- **Best For:** Regulated global financial institutions, healthcare providers, and enterprises operating Large Data Volumes (LDV).
+
+#### 🚀 Flosum Data Backup & Archive
+- **Company Scale:** $100M+ Estimated Valuation (~$10M+ ARR).
+- **Starting Price:** $2.75/user/month (Standalone backup add-on module).
+- **Free Tier Limits:** 14-day free trial upon tenant registration.
+- **Architecture & Overview:** 100% native Salesforce architecture that ensures zero data leaves your cloud perimeter. Integrates directly into Flosum DevOps release pipelines for pre-deployment snapshots and instant rollbacks.
+- **Best For:** DevOps-heavy engineering teams wanting backup and disaster recovery directly wired into their Salesforce CI/CD pipelines.
+
+---
+
+## 💻 Open-Source Software & CLI Tooling
+
+Open-source Salesforce data and metadata utilities are community-driven tools engineered primarily for **metadata versioning, rollback, schema documentation, and automated CI/CD extraction**.
+
+> [!NOTE]
+> Because Salesforce limits REST/Bulk API query volumes and charges for storage infrastructure, production record-level data protection at scale is dominated by SaaS platforms. Open-source solutions provide developer-friendly control over metadata snapshots, Git automation, and local database exports.
+
+### ⭐ Open-Source Repositories Ranked by Community Stars
+
+> Each star badge links directly to that repository's stargazers page:
+
+| Repository & Tool | Community Stars ⭐ | Primary Tech Stack 💻 | License 📜 | Data Backup 💾 | Metadata Backup 📄 | Self-Hosted 🏠 |
+|---|---|---|---|---|---|---|
+| **[sfdx-hardis](#sfdx-hardis)** | [![GitHub stars](https://img.shields.io/github/stars/hardisgroupcom/sfdx-hardis?style=social&color=white)](https://github.com/hardisgroupcom/sfdx-hardis/stargazers) | TypeScript / SF CLI | MIT License | ⚠️ Masked Sandboxes | ✅ Full Scheduled | ✅ Local / CI |
+| **[StratoSource](#stratosource)** | [![GitHub stars](https://img.shields.io/github/stars/StratoSource/StratoSource?style=social&color=white)](https://github.com/StratoSource/StratoSource/stargazers) | Java / Salesforce API | Apache-2.0 | ❌ No | ✅ Version Control | ✅ Self-Hosted |
+| **[force-meta-backup](#force-meta-backup)** | [![GitHub stars](https://img.shields.io/github/stars/alan-morey/force-meta-backup?style=social&color=white)](https://github.com/alan-morey/force-meta-backup/stargazers) | Ant / Shell / Java | Open Source | ❌ No | ✅ Ant XML Pull | ✅ Local CLI |
+| **[salesforceMetadataBackup](#salesforcemetadatabackup)** | [![GitHub stars](https://img.shields.io/github/stars/danieljpeter/salesforceMetadataBackup?style=social&color=white)](https://github.com/danieljpeter/salesforceMetadataBackup/stargazers) | PHP / Ant / REST API | MIT License | ❌ No | ✅ Git Auto-Push | ✅ Local / Server |
+| **[heimdall](#heimdall)** | [![GitHub stars](https://img.shields.io/github/stars/devrandom-se/heimdall?style=social&color=white)](https://github.com/devrandom-se/heimdall/stargazers) | Go / Salesforce API | MIT License | ✅ Point-in-Time | ✅ Archive | ✅ Self-Hosted |
+| **[backup-force.com](#backup-forcecom)** | [![GitHub stars](https://img.shields.io/github/stars/neowit/backup-force.com?style=social&color=white)](https://github.com/neowit/backup-force.com/stargazers) | Python / REST API | Apache-2.0 | ✅ Local SQLite/CSV | ✅ Schema | ✅ Local CLI |
+| **[metadata-backup](#metadata-backup)** | [![GitHub stars](https://img.shields.io/github/stars/mattandneil/metadata-backup?style=social&color=white)](https://github.com/mattandneil/metadata-backup/stargazers) | Python / Metadata API | MIT License | ❌ No | ✅ Full Org Pull | ✅ Local Script |
+| **[sfdcCommander](#sfdccommander)** | [![GitHub stars](https://img.shields.io/github/stars/jwiesel/sfdcCommander?style=social&color=white)](https://github.com/jwiesel/sfdcCommander/stargazers) | Java / Desktop App | GPL-3.0 | ✅ Local SQLite | ✅ XML Download | ✅ On-Premise |
+| **[force-backup-automator](#force-backup-automator)** | [![GitHub stars](https://img.shields.io/github/stars/stefanzepeda/force-backup-automator?style=social&color=white)](https://github.com/stefanzepeda/force-backup-automator/stargazers) | Python | MIT License | ✅ Weekly Export DL | ❌ No | ✅ Local / Cron |
+| **[sfdc-backup](#sfdc-backup)** | [![GitHub stars](https://img.shields.io/github/stars/joecheng511/sfdc-backup?style=social&color=white)](https://github.com/joecheng511/sfdc-backup/stargazers) | Python 3 / Bulk API | MIT License | ✅ Queryable Bulk | ❌ No | ✅ Local / Container |
+| **[sf-schema-snapshot](#sf-schema-snapshot)** | [![GitHub stars](https://img.shields.io/github/stars/MogwaiNerfHerder/sf-schema-snapshot?style=social&color=white)](https://github.com/MogwaiNerfHerder/sf-schema-snapshot/stargazers) | Python / SQLite | MIT License | ❌ No | ✅ Schema & Rules | ✅ Local CLI |
+| **[sf-metadata-backup](#sf-metadata-backup)** | [![GitHub stars](https://img.shields.io/github/stars/lebarion/sf-metadata-backup?style=social&color=white)](https://github.com/lebarion/sf-metadata-backup/stargazers) | TypeScript / SF CLI | MIT License | ❌ No | ✅ Rollback Tarball | ✅ Local CLI |
+
+---
+
+### 🛠️ In-Depth Open-Source Tool Profiles
+
+#### 🧰 [sfdx-hardis](https://github.com/hardisgroupcom/sfdx-hardis)
+[![GitHub stars](https://img.shields.io/github/stars/hardisgroupcom/sfdx-hardis?style=social&color=white)](https://github.com/hardisgroupcom/sfdx-hardis/stargazers)
+- **Stack:** TypeScript / Salesforce CLI (`sf` / `sfdx`)
+- **License:** MIT License
+- **Features:** A comprehensive "Swiss-army knife" for Salesforce developers and DevOps engineers. Automates end-to-end CI/CD pipelines, generates AI-powered org documentation, and executes scheduled daily metadata backups and change-monitoring directly into Git repositories.
+- **Best For:** Teams wanting an actively maintained, all-in-one CLI toolbox for automated Git-backed metadata protection and org monitoring.
+
+#### 🔄 [StratoSource](https://github.com/StratoSource/StratoSource)
+[![GitHub stars](https://img.shields.io/github/stars/StratoSource/StratoSource?style=social&color=white)](https://github.com/StratoSource/StratoSource/stargazers)
+- **Stack:** Java / Salesforce Tooling & Metadata APIs
+- **License:** Apache-2.0
+- **Features:** Complete Salesforce backup, release management, and version-tracking platform. Automatically retrieves all org metadata, parses components into human-readable source structures, and commits updates to local and remote Git repositories.
+- **Best For:** Enterprise developers needing a standalone server to synchronize Salesforce configurations with Git version control.
+
+#### 📦 [force-meta-backup](https://github.com/alan-morey/force-meta-backup)
+[![GitHub stars](https://img.shields.io/github/stars/alan-morey/force-meta-backup?style=social&color=white)](https://github.com/alan-morey/force-meta-backup/stargazers)
+- **Stack:** Apache Ant / Shell / Java
+- **License:** Open Source
+- **Features:** Automates the extraction of all available Salesforce metadata by dynamically constructing `package.xml` manifests and invoking the Salesforce Migration Tool (Ant).
+- **Best For:** Administrators comfortable with traditional Ant tooling wanting zero-configuration full metadata downloads.
+
+#### 🐙 [salesforceMetadataBackup](https://github.com/danieljpeter/salesforceMetadataBackup)
+[![GitHub stars](https://img.shields.io/github/stars/danieljpeter/salesforceMetadataBackup?style=social&color=white)](https://github.com/danieljpeter/salesforceMetadataBackup/stargazers)
+- **Stack:** PHP / Salesforce REST API / Apache Ant
+- **License:** MIT License
+- **Features:** Queries Salesforce metadata descriptions, generates dynamic `package.xml` files, retrieves metadata zips, unpacks them into a repository directory, and automatically commits and pushes diffs to GitHub.
+- **Best For:** Lightweight server-side cron jobs tracking org configuration history in GitHub.
+
+#### 🛡️ [heimdall](https://github.com/devrandom-se/heimdall)
+[![GitHub stars](https://img.shields.io/github/stars/devrandom-se/heimdall?style=social&color=white)](https://github.com/devrandom-se/heimdall/stargazers)
+- **Stack:** Go (Golang) / Salesforce REST & Streaming API
+- **License:** MIT License
+- **Features:** Self-hosted Salesforce backup engine written in high-performance Go. Features automated version history tracking, archival management, and point-in-time restore capabilities.
+- **Best For:** Developers looking for a modern, compiled Go utility capable of handling both records and configuration histories.
+
+#### 💾 [backup-force.com](https://github.com/neowit/backup-force.com)
+[![GitHub stars](https://img.shields.io/github/stars/neowit/backup-force.com?style=social&color=white)](https://github.com/neowit/backup-force.com/stargazers)
+- **Stack:** Python / Salesforce REST API
+- **License:** Apache-2.0
+- **Features:** Extracts and backs up Salesforce databases locally into SQLite files and CSV dumps. Queries all standard and custom objects, generating schema definitions and relationship structures.
+- **Best For:** Data analysts and developers requiring local SQLite replicas of Salesforce orgs for offline SQL queries and testing.
+
+#### 📁 [metadata-backup](https://github.com/mattandneil/metadata-backup)
+[![GitHub stars](https://img.shields.io/github/stars/mattandneil/metadata-backup?style=social&color=white)](https://github.com/mattandneil/metadata-backup/stargazers)
+- **Stack:** Python / Salesforce Metadata API
+- **License:** MIT License
+- **Features:** Python script designed to download every metadata item in a Salesforce organization, providing a snapshot for version control and compliance auditing.
+- **Best For:** Quick Python-based snapshots of org metadata definitions.
+
+#### 🖥️ [sfdcCommander](https://github.com/jwiesel/sfdcCommander)
+[![GitHub stars](https://img.shields.io/github/stars/jwiesel/sfdcCommander?style=social&color=white)](https://github.com/jwiesel/sfdcCommander/stargazers)
+- **Stack:** Java (Swing GUI / CLI)
+- **License:** GNU General Public License v3.0
+- **Features:** Comprehensive desktop administrative suite. Includes a **Database-Backup** feature that dumps complete org records into an SQLite database, a metadata downloader requiring no `package.xml` preparation, and technical documentation generators.
+- **Best For:** Admins preferring a graphical desktop application for creating local SQLite data snapshots and schema exports.
+
+#### ⏰ [force-backup-automator](https://github.com/stefanzepeda/force-backup-automator)
+[![GitHub stars](https://img.shields.io/github/stars/stefanzepeda/force-backup-automator?style=social&color=white)](https://github.com/stefanzepeda/force-backup-automator/stargazers)
+- **Stack:** Python / Selenium / Requests
+- **License:** MIT License
+- **Features:** Automates the downloading and extraction of native Salesforce Weekly Data Export zip files, overcoming the manual download expiration limits enforced by Salesforce.
+- **Best For:** Teams relying on Salesforce's built-in Weekly Export Service who need automated cron-based archive retention.
+
+#### 🚀 [sfdc-backup](https://github.com/joecheng511/sfdc-backup)
+[![GitHub stars](https://img.shields.io/github/stars/joecheng511/sfdc-backup?style=social&color=white)](https://github.com/joecheng511/sfdc-backup/stargazers)
+- **Stack:** Python 3 / Salesforce Bulk API 2.0 / REST API
+- **License:** MIT License
+- **Features:** Efficient Python solution that backs up all queryable record data from a Salesforce organization using Bulk API 2.0. Outputs structured JSON/CSV files while respecting API limits.
+- **Best For:** Developers needing an automated batch pipeline to dump table records into cold cloud storage (S3/GCS).
+
+#### 🔍 [sf-schema-snapshot](https://github.com/MogwaiNerfHerder/sf-schema-snapshot)
+[![GitHub stars](https://img.shields.io/github/stars/MogwaiNerfHerder/sf-schema-snapshot?style=social&color=white)](https://github.com/MogwaiNerfHerder/sf-schema-snapshot/stargazers)
+- **Stack:** Python / SQLite
+- **License:** MIT License
+- **Features:** Dumps an org's entire data model (objects, custom fields, relationships, validation rules, Apex triggers, and Organization-Wide Defaults) into a self-documenting SQLite database in minutes.
+- **Best For:** RevOps teams, CRM architects, and LLM coding agents needing a queryable SQL schema graph for org discovery and documentation.
+
+#### ⏪ [sf-metadata-backup](https://github.com/lebarion/sf-metadata-backup)
+[![GitHub stars](https://img.shields.io/github/stars/lebarion/sf-metadata-backup?style=social&color=white)](https://github.com/lebarion/sf-metadata-backup/stargazers)
+- **Stack:** TypeScript / Salesforce CLI plugin
+- **License:** MIT License
+- **Features:** Salesforce CLI plugin dedicated to pre-deployment safety. Creates `.tar.gz` archive snapshots of metadata before deployments and generates instant destructive change manifests for one-line rollback (`sf backup rollback`).
+- **Best For:** Salesforce developers looking for quick pre-deployment safety nets and automated rollbacks during release cycles.
+
+---
+
+## 📊 Feature Comparison at a Glance
+
+| Solution | Deployment | Data Records 💾 | Metadata Config 📄 | Files & Chatter 📎 | Sandbox Seeding 🌱 | Free Tier Option 🎁 | Target Audience 🎯 |
+|---|---|:---:|:---:|:---:|:---:|:---:|---|
+| **Veeam** | Self-Hosted / SaaS | ✅ | ✅ | ✅ | ✅ | ✅ Free ≤50 Users | Small orgs, Banks & Private Cloud |
+| **Commvault** | Cloud SaaS | ✅ | ✅ | ✅ | ✅ | 30-Day Trial | Multi-cloud enterprise customers |
+| **CloudAlly** | Cloud SaaS | ✅ | ✅ | ✅ | ✅ | 14-Day Trial | Cost-conscious mid-market & M365 orgs |
+| **AvePoint** | Cloud SaaS | ✅ | ✅ | ✅ | ✅ | 30-Day Trial | Teams with intensive sandbox needs |
+| **Druva** | Cloud SaaS (AWS) | ✅ | ✅ | ✅ | ✅ | 30-Day Trial | Serverless-first enterprise compliance |
+| **Own (OwnBackup)** | Cloud SaaS (Native) | ✅ | ✅ | ✅ | ✅ | 14-Day Trial | Salesforce-first enterprises & DevOps |
+| **Spanning** | Cloud SaaS | ✅ | ✅ | ✅ | ❌ | 14-Day Trial | MSPs & mid-sized businesses |
+| **Odaseva** | Cloud SaaS (Multi-Cloud) | ✅ | ✅ | ✅ | ✅ | POC Sandbox | Ultra-large volume (LDV) & regulated orgs |
+| **Flosum** | Native Salesforce | ✅ | ✅ | ✅ | ✅ | 14-Day Trial | Salesforce DevOps & release managers |
+| **sfdx-hardis** | Self-Hosted CLI / CI | ⚠️ Masked | ✅ | ❌ | ⚠️ Scripted | ✅ 100% Free Open-Source | Salesforce developers & DevOps engineers |
+| **heimdall** | Self-Hosted (Go) | ✅ | ✅ | ❌ | ❌ | ✅ 100% Free Open-Source | Self-hosters & Go engineers |
+| **sf-metadata-backup** | Local SF CLI Plugin | ❌ | ✅ Rollback | ❌ | ❌ | ✅ 100% Free Open-Source | Developers wanting pre-deploy safety |
+| **backup-force.com** | Local Python Script | ✅ SQLite | ✅ Schema | ❌ | ❌ | ✅ 100% Free Open-Source | Local SQL reporting & offline audits |
+| **sf-schema-snapshot** | Local Python Script | ❌ | ✅ Schema | ❌ | ❌ | ✅ 100% Free Open-Source | CRM architects & RevOps data modeling |
+
+---
+
+## 💖 Support
+
+A huge thank you to everyone exploring, evaluating, and contributing to this curated repository! If you find this project helpful for your organization's Salesforce disaster recovery, backup strategies, or metadata management:
+
+- ⭐ **Star this repository** to help others discover it across GitHub.
+- 🍴 **Fork and share** it with your developer, admin, and architect colleagues.
+- ☕ **Support the maintainer:** If this saved you time or research hours, consider buying a coffee or sponsoring ongoing open-source maintenance via the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**!
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Salesforce-CRM-Data-Metadata-Backup&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Salesforce-CRM-Data-Metadata-Backup&type=date&legend=top-left)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Scalable Cloud Testing Infrastructure tool that should be listed here, please open a pull request with:
+Contributions are warmly encouraged! If you know of an outstanding open-source tool, CLI plugin, or enterprise platform for Salesforce data and metadata recovery, please submit a pull request:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source (or clearly note if it is source-available but not OSI-approved, as with Nomad's BSL). Note that the ecosystem **splits** between **fully managed cloud grids** (BrowserStack, Sauce Labs, LambdaTest) that eliminate infrastructure overhead, **pay-per-use device farms** (AWS Device Farm), and **self-hosted orchestration layers** (Selenium Grid, Testkube, kind). **Selenium Grid** remains the foundational open-source infrastructure, with Grid 4.41.0 adding Kubernetes Dynamic Grid for true cloud-native scaling [citation:4][citation:13]. **Testkube** is the strongest choice for teams wanting to run any test type natively in Kubernetes with a path from open-source agent to commercial control plane [citation:14].
+1. 🍴 Fork the repository.
+2. 🌿 Create a descriptive branch: `git checkout -b add-tool-name`.
+3. 📝 Add your project with links, category tags, pricing/license details, and GitHub star badges (`style=social&color=white`).
+4. 🚀 Open a Pull Request!
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This repository and curated list are released under the [Creative Commons Zero v1.0 Universal License (CC0 1.0)](LICENSE). All referenced trademarks, product names, logos, and repository links belong to their respective owners.
 
----
-
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+<p align="center">
+  <sub>Built with ❤️ for the Salesforce Admin, Developer &amp; Data Resilience Community. ⭐ Star if you find this valuable!</sub>
+</p>
