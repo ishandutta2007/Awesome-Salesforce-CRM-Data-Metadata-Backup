@@ -139,106 +139,106 @@ Open-source Salesforce data and metadata utilities are community-driven tools en
 
 ### ⭐ Open-Source Repositories Ranked by Community Stars
 
-> Each star badge links directly to that repository's stargazers page:
+> Each Stars_Badge links directly to that repository's stargazers page:
 
-| Repository & Tool | Community Stars ⭐ | Primary Tech Stack 💻 | License 📜 | Data Backup 💾 | Metadata Backup 📄 | Self-Hosted 🏠 |
+| Repository & Tool | Community GitHub_Stars ⭐ | Primary Tech Stack 💻 | License 📜 | Data Backup 💾 | Metadata Backup 📄 | Self-Hosted 🏠 |
 |---|---|---|---|---|---|---|
-| **[sfdx-hardis](#sfdx-hardis)** | [![GitHub stars](https://img.shields.io/github/stars/hardisgroupcom/sfdx-hardis?style=social&color=white)](https://github.com/hardisgroupcom/sfdx-hardis/stargazers) | TypeScript / SF CLI | MIT License | ⚠️ Masked Sandboxes | ✅ Full Scheduled | ✅ Local / CI |
-| **[StratoSource](#stratosource)** | [![GitHub stars](https://img.shields.io/github/stars/StratoSource/StratoSource?style=social&color=white)](https://github.com/StratoSource/StratoSource/stargazers) | Java / Salesforce API | Apache-2.0 | ❌ No | ✅ Version Control | ✅ Self-Hosted |
-| **[force-meta-backup](#force-meta-backup)** | [![GitHub stars](https://img.shields.io/github/stars/alan-morey/force-meta-backup?style=social&color=white)](https://github.com/alan-morey/force-meta-backup/stargazers) | Ant / Shell / Java | Open Source | ❌ No | ✅ Ant XML Pull | ✅ Local CLI |
-| **[salesforceMetadataBackup](#salesforcemetadatabackup)** | [![GitHub stars](https://img.shields.io/github/stars/danieljpeter/salesforceMetadataBackup?style=social&color=white)](https://github.com/danieljpeter/salesforceMetadataBackup/stargazers) | PHP / Ant / REST API | MIT License | ❌ No | ✅ Git Auto-Push | ✅ Local / Server |
-| **[heimdall](#heimdall)** | [![GitHub stars](https://img.shields.io/github/stars/devrandom-se/heimdall?style=social&color=white)](https://github.com/devrandom-se/heimdall/stargazers) | Go / Salesforce API | MIT License | ✅ Point-in-Time | ✅ Archive | ✅ Self-Hosted |
-| **[backup-force.com](#backup-forcecom)** | [![GitHub stars](https://img.shields.io/github/stars/neowit/backup-force.com?style=social&color=white)](https://github.com/neowit/backup-force.com/stargazers) | Python / REST API | Apache-2.0 | ✅ Local SQLite/CSV | ✅ Schema | ✅ Local CLI |
-| **[metadata-backup](#metadata-backup)** | [![GitHub stars](https://img.shields.io/github/stars/mattandneil/metadata-backup?style=social&color=white)](https://github.com/mattandneil/metadata-backup/stargazers) | Python / Metadata API | MIT License | ❌ No | ✅ Full Org Pull | ✅ Local Script |
-| **[sfdcCommander](#sfdccommander)** | [![GitHub stars](https://img.shields.io/github/stars/jwiesel/sfdcCommander?style=social&color=white)](https://github.com/jwiesel/sfdcCommander/stargazers) | Java / Desktop App | GPL-3.0 | ✅ Local SQLite | ✅ XML Download | ✅ On-Premise |
-| **[force-backup-automator](#force-backup-automator)** | [![GitHub stars](https://img.shields.io/github/stars/stefanzepeda/force-backup-automator?style=social&color=white)](https://github.com/stefanzepeda/force-backup-automator/stargazers) | Python | MIT License | ✅ Weekly Export DL | ❌ No | ✅ Local / Cron |
-| **[sfdc-backup](#sfdc-backup)** | [![GitHub stars](https://img.shields.io/github/stars/joecheng511/sfdc-backup?style=social&color=white)](https://github.com/joecheng511/sfdc-backup/stargazers) | Python 3 / Bulk API | MIT License | ✅ Queryable Bulk | ❌ No | ✅ Local / Container |
-| **[sf-schema-snapshot](#sf-schema-snapshot)** | [![GitHub stars](https://img.shields.io/github/stars/MogwaiNerfHerder/sf-schema-snapshot?style=social&color=white)](https://github.com/MogwaiNerfHerder/sf-schema-snapshot/stargazers) | Python / SQLite | MIT License | ❌ No | ✅ Schema & Rules | ✅ Local CLI |
-| **[sf-metadata-backup](#sf-metadata-backup)** | [![GitHub stars](https://img.shields.io/github/stars/lebarion/sf-metadata-backup?style=social&color=white)](https://github.com/lebarion/sf-metadata-backup/stargazers) | TypeScript / SF CLI | MIT License | ❌ No | ✅ Rollback Tarball | ✅ Local CLI |
+| **[sfdx-hardis](#sfdx-hardis)** | [![GitHub_Stars](https://img.shields.io/github/stars/hardisgroupcom/sfdx-hardis?style=social&color=white)](https://github.com/hardisgroupcom/sfdx-hardis/stargazers) | TypeScript / SF CLI | MIT License | ⚠️ Masked Sandboxes | ✅ Full Scheduled | ✅ Local / CI |
+| **[StratoSource](#stratosource)** | [![GitHub_Stars](https://img.shields.io/github/stars/StratoSource/StratoSource?style=social&color=white)](https://github.com/StratoSource/StratoSource/stargazers) | Java / Salesforce API | Apache-2.0 | ❌ No | ✅ Version Control | ✅ Self-Hosted |
+| **[force-meta-backup](#force-meta-backup)** | [![GitHub_Stars](https://img.shields.io/github/stars/alan-morey/force-meta-backup?style=social&color=white)](https://github.com/alan-morey/force-meta-backup/stargazers) | Ant / Shell / Java | Open Source | ❌ No | ✅ Ant XML Pull | ✅ Local CLI |
+| **[salesforceMetadataBackup](#salesforcemetadatabackup)** | [![GitHub_Stars](https://img.shields.io/github/stars/danieljpeter/salesforceMetadataBackup?style=social&color=white)](https://github.com/danieljpeter/salesforceMetadataBackup/stargazers) | PHP / Ant / REST API | MIT License | ❌ No | ✅ Git Auto-Push | ✅ Local / Server |
+| **[heimdall](#heimdall)** | [![GitHub_Stars](https://img.shields.io/github/stars/devrandom-se/heimdall?style=social&color=white)](https://github.com/devrandom-se/heimdall/stargazers) | Go / Salesforce API | MIT License | ✅ Point-in-Time | ✅ Archive | ✅ Self-Hosted |
+| **[backup-force.com](#backup-forcecom)** | [![GitHub_Stars](https://img.shields.io/github/stars/neowit/backup-force.com?style=social&color=white)](https://github.com/neowit/backup-force.com/stargazers) | Python / REST API | Apache-2.0 | ✅ Local SQLite/CSV | ✅ Schema | ✅ Local CLI |
+| **[metadata-backup](#metadata-backup)** | [![GitHub_Stars](https://img.shields.io/github/stars/mattandneil/metadata-backup?style=social&color=white)](https://github.com/mattandneil/metadata-backup/stargazers) | Python / Metadata API | MIT License | ❌ No | ✅ Full Org Pull | ✅ Local Script |
+| **[sfdcCommander](#sfdccommander)** | [![GitHub_Stars](https://img.shields.io/github/stars/jwiesel/sfdcCommander?style=social&color=white)](https://github.com/jwiesel/sfdcCommander/stargazers) | Java / Desktop App | GPL-3.0 | ✅ Local SQLite | ✅ XML Download | ✅ On-Premise |
+| **[force-backup-automator](#force-backup-automator)** | [![GitHub_Stars](https://img.shields.io/github/stars/stefanzepeda/force-backup-automator?style=social&color=white)](https://github.com/stefanzepeda/force-backup-automator/stargazers) | Python | MIT License | ✅ Weekly Export DL | ❌ No | ✅ Local / Cron |
+| **[sfdc-backup](#sfdc-backup)** | [![GitHub_Stars](https://img.shields.io/github/stars/joecheng511/sfdc-backup?style=social&color=white)](https://github.com/joecheng511/sfdc-backup/stargazers) | Python 3 / Bulk API | MIT License | ✅ Queryable Bulk | ❌ No | ✅ Local / Container |
+| **[sf-schema-snapshot](#sf-schema-snapshot)** | [![GitHub_Stars](https://img.shields.io/github/stars/MogwaiNerfHerder/sf-schema-snapshot?style=social&color=white)](https://github.com/MogwaiNerfHerder/sf-schema-snapshot/stargazers) | Python / SQLite | MIT License | ❌ No | ✅ Schema & Rules | ✅ Local CLI |
+| **[sf-metadata-backup](#sf-metadata-backup)** | [![GitHub_Stars](https://img.shields.io/github/stars/lebarion/sf-metadata-backup?style=social&color=white)](https://github.com/lebarion/sf-metadata-backup/stargazers) | TypeScript / SF CLI | MIT License | ❌ No | ✅ Rollback Tarball | ✅ Local CLI |
 
 ---
 
 ### 🛠️ In-Depth Open-Source Tool Profiles
 
 #### 🧰 [sfdx-hardis](https://github.com/hardisgroupcom/sfdx-hardis)
-[![GitHub stars](https://img.shields.io/github/stars/hardisgroupcom/sfdx-hardis?style=social&color=white)](https://github.com/hardisgroupcom/sfdx-hardis/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/hardisgroupcom/sfdx-hardis?style=social&color=white)](https://github.com/hardisgroupcom/sfdx-hardis/stargazers)
 - **Stack:** TypeScript / Salesforce CLI (`sf` / `sfdx`)
 - **License:** MIT License
 - **Features:** A comprehensive "Swiss-army knife" for Salesforce developers and DevOps engineers. Automates end-to-end CI/CD pipelines, generates AI-powered org documentation, and executes scheduled daily metadata backups and change-monitoring directly into Git repositories.
 - **Best For:** Teams wanting an actively maintained, all-in-one CLI toolbox for automated Git-backed metadata protection and org monitoring.
 
 #### 🔄 [StratoSource](https://github.com/StratoSource/StratoSource)
-[![GitHub stars](https://img.shields.io/github/stars/StratoSource/StratoSource?style=social&color=white)](https://github.com/StratoSource/StratoSource/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/StratoSource/StratoSource?style=social&color=white)](https://github.com/StratoSource/StratoSource/stargazers)
 - **Stack:** Java / Salesforce Tooling & Metadata APIs
 - **License:** Apache-2.0
 - **Features:** Complete Salesforce backup, release management, and version-tracking platform. Automatically retrieves all org metadata, parses components into human-readable source structures, and commits updates to local and remote Git repositories.
 - **Best For:** Enterprise developers needing a standalone server to synchronize Salesforce configurations with Git version control.
 
 #### 📦 [force-meta-backup](https://github.com/alan-morey/force-meta-backup)
-[![GitHub stars](https://img.shields.io/github/stars/alan-morey/force-meta-backup?style=social&color=white)](https://github.com/alan-morey/force-meta-backup/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/alan-morey/force-meta-backup?style=social&color=white)](https://github.com/alan-morey/force-meta-backup/stargazers)
 - **Stack:** Apache Ant / Shell / Java
 - **License:** Open Source
 - **Features:** Automates the extraction of all available Salesforce metadata by dynamically constructing `package.xml` manifests and invoking the Salesforce Migration Tool (Ant).
 - **Best For:** Administrators comfortable with traditional Ant tooling wanting zero-configuration full metadata downloads.
 
 #### 🐙 [salesforceMetadataBackup](https://github.com/danieljpeter/salesforceMetadataBackup)
-[![GitHub stars](https://img.shields.io/github/stars/danieljpeter/salesforceMetadataBackup?style=social&color=white)](https://github.com/danieljpeter/salesforceMetadataBackup/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/danieljpeter/salesforceMetadataBackup?style=social&color=white)](https://github.com/danieljpeter/salesforceMetadataBackup/stargazers)
 - **Stack:** PHP / Salesforce REST API / Apache Ant
 - **License:** MIT License
 - **Features:** Queries Salesforce metadata descriptions, generates dynamic `package.xml` files, retrieves metadata zips, unpacks them into a repository directory, and automatically commits and pushes diffs to GitHub.
 - **Best For:** Lightweight server-side cron jobs tracking org configuration history in GitHub.
 
 #### 🛡️ [heimdall](https://github.com/devrandom-se/heimdall)
-[![GitHub stars](https://img.shields.io/github/stars/devrandom-se/heimdall?style=social&color=white)](https://github.com/devrandom-se/heimdall/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/devrandom-se/heimdall?style=social&color=white)](https://github.com/devrandom-se/heimdall/stargazers)
 - **Stack:** Go (Golang) / Salesforce REST & Streaming API
 - **License:** MIT License
 - **Features:** Self-hosted Salesforce backup engine written in high-performance Go. Features automated version history tracking, archival management, and point-in-time restore capabilities.
 - **Best For:** Developers looking for a modern, compiled Go utility capable of handling both records and configuration histories.
 
 #### 💾 [backup-force.com](https://github.com/neowit/backup-force.com)
-[![GitHub stars](https://img.shields.io/github/stars/neowit/backup-force.com?style=social&color=white)](https://github.com/neowit/backup-force.com/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/neowit/backup-force.com?style=social&color=white)](https://github.com/neowit/backup-force.com/stargazers)
 - **Stack:** Python / Salesforce REST API
 - **License:** Apache-2.0
 - **Features:** Extracts and backs up Salesforce databases locally into SQLite files and CSV dumps. Queries all standard and custom objects, generating schema definitions and relationship structures.
 - **Best For:** Data analysts and developers requiring local SQLite replicas of Salesforce orgs for offline SQL queries and testing.
 
 #### 📁 [metadata-backup](https://github.com/mattandneil/metadata-backup)
-[![GitHub stars](https://img.shields.io/github/stars/mattandneil/metadata-backup?style=social&color=white)](https://github.com/mattandneil/metadata-backup/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/mattandneil/metadata-backup?style=social&color=white)](https://github.com/mattandneil/metadata-backup/stargazers)
 - **Stack:** Python / Salesforce Metadata API
 - **License:** MIT License
 - **Features:** Python script designed to download every metadata item in a Salesforce organization, providing a snapshot for version control and compliance auditing.
 - **Best For:** Quick Python-based snapshots of org metadata definitions.
 
 #### 🖥️ [sfdcCommander](https://github.com/jwiesel/sfdcCommander)
-[![GitHub stars](https://img.shields.io/github/stars/jwiesel/sfdcCommander?style=social&color=white)](https://github.com/jwiesel/sfdcCommander/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/jwiesel/sfdcCommander?style=social&color=white)](https://github.com/jwiesel/sfdcCommander/stargazers)
 - **Stack:** Java (Swing GUI / CLI)
 - **License:** GNU General Public License v3.0
 - **Features:** Comprehensive desktop administrative suite. Includes a **Database-Backup** feature that dumps complete org records into an SQLite database, a metadata downloader requiring no `package.xml` preparation, and technical documentation generators.
 - **Best For:** Admins preferring a graphical desktop application for creating local SQLite data snapshots and schema exports.
 
 #### ⏰ [force-backup-automator](https://github.com/stefanzepeda/force-backup-automator)
-[![GitHub stars](https://img.shields.io/github/stars/stefanzepeda/force-backup-automator?style=social&color=white)](https://github.com/stefanzepeda/force-backup-automator/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/stefanzepeda/force-backup-automator?style=social&color=white)](https://github.com/stefanzepeda/force-backup-automator/stargazers)
 - **Stack:** Python / Selenium / Requests
 - **License:** MIT License
 - **Features:** Automates the downloading and extraction of native Salesforce Weekly Data Export zip files, overcoming the manual download expiration limits enforced by Salesforce.
 - **Best For:** Teams relying on Salesforce's built-in Weekly Export Service who need automated cron-based archive retention.
 
 #### 🚀 [sfdc-backup](https://github.com/joecheng511/sfdc-backup)
-[![GitHub stars](https://img.shields.io/github/stars/joecheng511/sfdc-backup?style=social&color=white)](https://github.com/joecheng511/sfdc-backup/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/joecheng511/sfdc-backup?style=social&color=white)](https://github.com/joecheng511/sfdc-backup/stargazers)
 - **Stack:** Python 3 / Salesforce Bulk API 2.0 / REST API
 - **License:** MIT License
 - **Features:** Efficient Python solution that backs up all queryable record data from a Salesforce organization using Bulk API 2.0. Outputs structured JSON/CSV files while respecting API limits.
 - **Best For:** Developers needing an automated batch pipeline to dump table records into cold cloud storage (S3/GCS).
 
 #### 🔍 [sf-schema-snapshot](https://github.com/MogwaiNerfHerder/sf-schema-snapshot)
-[![GitHub stars](https://img.shields.io/github/stars/MogwaiNerfHerder/sf-schema-snapshot?style=social&color=white)](https://github.com/MogwaiNerfHerder/sf-schema-snapshot/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/MogwaiNerfHerder/sf-schema-snapshot?style=social&color=white)](https://github.com/MogwaiNerfHerder/sf-schema-snapshot/stargazers)
 - **Stack:** Python / SQLite
 - **License:** MIT License
 - **Features:** Dumps an org's entire data model (objects, custom fields, relationships, validation rules, Apex triggers, and Organization-Wide Defaults) into a self-documenting SQLite database in minutes.
 - **Best For:** RevOps teams, CRM architects, and LLM coding agents needing a queryable SQL schema graph for org discovery and documentation.
 
 #### ⏪ [sf-metadata-backup](https://github.com/lebarion/sf-metadata-backup)
-[![GitHub stars](https://img.shields.io/github/stars/lebarion/sf-metadata-backup?style=social&color=white)](https://github.com/lebarion/sf-metadata-backup/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/lebarion/sf-metadata-backup?style=social&color=white)](https://github.com/lebarion/sf-metadata-backup/stargazers)
 - **Stack:** TypeScript / Salesforce CLI plugin
 - **License:** MIT License
 - **Features:** Salesforce CLI plugin dedicated to pre-deployment safety. Creates `.tar.gz` archive snapshots of metadata before deployments and generates instant destructive change manifests for one-line rollback (`sf backup rollback`).
@@ -289,7 +289,7 @@ Contributions are warmly encouraged! If you know of an outstanding open-source t
 
 1. 🍴 Fork the repository.
 2. 🌿 Create a descriptive branch: `git checkout -b add-tool-name`.
-3. 📝 Add your project with links, category tags, pricing/license details, and GitHub star badges (`style=social&color=white`).
+3. 📝 Add your project with links, category tags, pricing/license details, and GitHub Stars_Badges (`style=social&color=white`).
 4. 🚀 Open a Pull Request!
 
 ---
