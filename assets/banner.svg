@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060d1f" />
+      <stop offset="45%" stop-color="#0a1a36" />
+      <stop offset="100%" stop-color="#030814" />
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00a1e0" />
+      <stop offset="50%" stop-color="#0176d3" />
+      <stop offset="100%" stop-color="#7f56d9" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a1e0" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0176d3" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      fill: #38bdf8;
+    }
+    .card-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+    .card-sub {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      fill: #64748b;
+    }
+
+    /* Ambient pulse animations */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(1.08); }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-18px) translateX(8px); opacity: 0.8; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+    }
+    @keyframes dashCycle {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes orbitRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .pulsing-orb {
+      animation: pulseGlow 6s ease-in-out infinite;
+      transform-origin: 980px 180px;
+    }
+    .pulsing-orb-left {
+      animation: pulseGlow 8s ease-in-out infinite reverse;
+      transform-origin: 120px 100px;
+    }
+    .particle-1 { animation: floatParticle 5s ease-in-out infinite; }
+    .particle-2 { animation: floatParticle 7s ease-in-out infinite 1.5s; }
+    .particle-3 { animation: floatParticle 6s ease-in-out infinite 3s; }
+    .stream-line {
+      stroke-dasharray: 6 8;
+      animation: dashCycle 2.5s linear infinite;
+    }
+    .rotating-radar {
+      animation: orbitRotate 20s linear infinite;
+      transform-origin: 980px 180px;
+    }
+  </style>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" rx="16" fill="none" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Background Animated Ambient Light Orbs -->
+  <circle class="pulsing-orb-left" cx="120" cy="90" r="140" fill="#0176d3" opacity="0.18" filter="url(#neonGlow)" />
+  <circle class="pulsing-orb" cx="980" cy="180" r="160" fill="#7f56d9" opacity="0.22" filter="url(#neonGlow)" />
+  <circle cx="980" cy="180" r="90" fill="#00a1e0" opacity="0.15" filter="url(#neonGlow)" />
+
+  <!-- Background Subtle Grid Pattern -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.18">
+    <line x1="60" y1="0" x2="60" y2="360" />
+    <line x1="160" y1="0" x2="160" y2="360" />
+    <line x1="260" y1="0" x2="260" y2="360" />
+    <line x1="360" y1="0" x2="360" y2="360" />
+    <line x1="460" y1="0" x2="460" y2="360" />
+    <line x1="560" y1="0" x2="560" y2="360" />
+    <line x1="660" y1="0" x2="660" y2="360" />
+    <line x1="760" y1="0" x2="760" y2="360" />
+    <line x1="860" y1="0" x2="860" y2="360" />
+    <line x1="960" y1="0" x2="960" y2="360" />
+    <line x1="1060" y1="0" x2="1060" y2="360" />
+    <line x1="1160" y1="0" x2="1160" y2="360" />
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+  </g>
+
+  <!-- Animated Data Transfer / Sync Waves in Background -->
+  <g opacity="0.45">
+    <path class="stream-line" d="M 520 80 Q 750 40 980 130" fill="none" stroke="#00f2fe" stroke-width="2" />
+    <path class="stream-line" d="M 520 180 Q 750 200 980 180" fill="none" stroke="#0176d3" stroke-width="2" style="animation-duration: 3.5s;" />
+    <path class="stream-line" d="M 520 280 Q 750 320 980 230" fill="none" stroke="#7f56d9" stroke-width="2" style="animation-duration: 2s;" />
+  </g>
+
+  <!-- Right Visual Graphics: Salesforce Cloud + Shield & Backup Nodes -->
+  <g transform="translate(40, 0)">
+    <!-- Rotating decorative orbit -->
+    <g class="rotating-radar">
+      <circle cx="940" cy="180" r="115" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="8 12" opacity="0.3" />
+      <circle cx="940" cy="180" r="135" fill="none" stroke="#818cf8" stroke-width="0.8" stroke-dasharray="4 16" opacity="0.25" />
+      <circle cx="825" cy="180" r="4" fill="#00f2fe" />
+      <circle cx="1055" cy="180" r="4" fill="#7f56d9" />
+    </g>
+
+    <!-- Holographic Shield Background -->
+    <path d="M 940 90 L 1025 125 L 1025 210 Q 940 270 940 270 Q 855 210 855 210 L 855 125 Z"
+          fill="url(#shieldGrad)" stroke="#00a1e0" stroke-width="2.5" opacity="0.75" />
+
+    <!-- Salesforce Cloud Icon Silhouette inside Shield -->
+    <path d="M 915 178 A 16 16 0 0 1 936 156 A 24 24 0 0 1 972 158 A 18 18 0 0 1 988 178 A 14 14 0 0 1 982 204 L 920 204 A 14 14 0 0 1 915 178 Z"
+          fill="#ffffff" opacity="0.9" />
+
+    <!-- Checkmark Badge on Cloud (Disaster Recovery Secured) -->
+    <circle cx="972" cy="198" r="10" fill="#10b981" />
+    <path d="M 968 198 L 971 201 L 977 195" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Dynamic Flow Floating Status Cards -->
+    <g class="particle-1">
+      <rect x="740" y="70" width="155" height="52" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+      <rect x="740" y="70" width="155" height="52" rx="10" fill="url(#cardGrad)" />
+      <circle cx="760" cy="96" r="6" fill="#10b981" />
+      <text x="775" y="92" class="card-label">RPO &lt; 15 mins</text>
+      <text x="775" y="108" class="card-sub">Continuous Replication</text>
+    </g>
+
+    <g class="particle-2">
+      <rect x="760" y="240" width="165" height="52" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+      <rect x="760" y="240" width="165" height="52" rx="10" fill="url(#cardGrad)" />
+      <circle cx="780" cy="266" r="6" fill="#00a1e0" />
+      <text x="795" y="262" class="card-label">Metadata &amp; Schema</text>
+      <text x="795" y="278" class="card-sub">Point-in-Time Rollback</text>
+    </g>
+
+    <g class="particle-3">
+      <rect x="1005" y="145" width="135" height="52" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+      <rect x="1005" y="145" width="135" height="52" rx="10" fill="url(#cardGrad)" />
+      <circle cx="1023" cy="171" r="6" fill="#8b5cf6" />
+      <text x="1038" y="167" class="card-label">GDPR / SEC</text>
+      <text x="1038" y="183" class="card-sub">BYOK &amp; Immutable</text>
+    </g>
+  </g>
+
+  <!-- Foreground Content (Left / Center) - High Contrast & Unobscured -->
+  <g transform="translate(60, 0)">
+    <!-- Category Pill Tag -->
+    <g transform="translate(0, 52)">
+      <rect width="250" height="28" rx="14" fill="#0369a1" fill-opacity="0.25" stroke="#0284c7" stroke-width="1.2" />
+      <circle cx="14" cy="14" r="4" fill="#38bdf8" />
+      <text x="26" y="18" class="badge-text">ENTERPRISE SAAS &amp; OPEN SOURCE</text>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(0, 126)">
+      <text x="0" y="0" class="title-text">Awesome Salesforce CRM</text>
+      <text x="0" y="44" class="title-text">
+        <tspan fill="url(#glowGrad)">Data &amp; Metadata</tspan> Backup
+      </text>
+    </g>
+
+    <!-- Subtitle / Tagline -->
+    <g transform="translate(0, 212)">
+      <text x="0" y="0" class="subtitle-text">Curated enterprise data resilience, disaster recovery, sandbox seeding,</text>
+      <text x="0" y="24" class="subtitle-text">automated metadata snapshotting &amp; CLI rollback solutions for Salesforce.</text>
+    </g>
+
+    <!-- Feature Quick Pills -->
+    <g transform="translate(0, 276)">
+      <!-- Pill 1 -->
+      <g>
+        <rect width="132" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="16" y="19" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1" font-weight="500">🛡️ Zero Data Loss</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(142, 0)">
+        <rect width="138" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="16" y="19" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1" font-weight="500">⚡ Point-In-Time</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(290, 0)">
+        <rect width="144" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="16" y="19" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1" font-weight="500">🔒 BYOK Encryption</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(444, 0)">
+        <rect width="154" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="16" y="19" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1" font-weight="500">💻 100% Open Source</text>
+      </g>
+    </g>
+  </g>
+</svg>
